@@ -49,11 +49,11 @@ table#saturday {
   }
 }
 .artist {
-  font-size: 27px;
+  font-size: 1.5vw;
   color: white;
 }
 .time {
-  font-size: 18px;
+  font-size: 1.2vw;
   text-align: center;
   color: #c5c5c5;
   font-style: italic;
@@ -63,13 +63,13 @@ table#saturday {
 th,
 td {
   color: #c5c5c5;
-  font-size: 21px;
+  font-size: 1vw;
   border-bottom: 1px solid #2e2e2e;
 }
 .day {
   color: white;
   font-style: bold;
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 .zone {
   color: white;
