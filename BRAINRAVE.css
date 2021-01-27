@@ -1,0 +1,68 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.bgimg {
+  background-image: url("images/dotgrid.gif");
+}
+
+.allcaps {
+  text-transform: uppercase;
+}
+
+.dots {
+  border-top: 1px dotted;
+}
+
+table#friday {
+  color: white;
+}
+table#saturday {
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.artist {
+  font-size: 27px;
+  color: white;
+}
+.time {
+  font-size: 18px;
+  text-align: center;
+  color: #d3d4d4;
+  font-style: italic;
+
+  background-color: #232b2b;
+}
+th,
+td {
+  color: #d3d4d4;
+  font-size: 21px;
+  border-bottom: 1px solid #232b2b;
+}
+.day {
+  color: white;
+  font-style: bold;
+  font-size: 30px;
+}
+.zone {
+  color: white;
+  background-color: #151919;
+}
