@@ -1,14 +1,12 @@
 body {
   font-family: "Lato", sans-serif;
+  background-image: url("images/wideGrid2_vertSm.png");
 }
 
 .bgimg {
-  background-image: url("images/newgrid_square.png");
+  background-image: url("images/wideGrid2_vertSm.png");
   background-repeat: repeat;
-}
-
-.allcaps {
-  text-transform: uppercase;
+  height: 100%;
 }
 
 .dots {

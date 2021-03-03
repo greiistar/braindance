@@ -1,0 +1,43 @@
+.topnav {
+  overflow: hidden;
+  background-color: #2e2e2e;
+}
+
+.topnav a {
+  color: #c5c5c5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff0000;
+  color: white;
+}
+
+/*
+  background-image: url("images/newgrid_square.png");
+  background-repeat: repeat;
+  background-position: center;
+}
+*/
+.main {
+  background: url("images/newgrid_square.png") repeat, #000000;
+}
+
+.btn {
+  padding-top: 10px;
+  background-color: #111111;
+  border-radius: 5px;
+  border-color: #0000ff;
+  color: white;
+}
+#demo {
+  border-radius: 1px;
+  border-color: white;
+}
