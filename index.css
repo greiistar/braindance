@@ -34,3 +34,19 @@ body {
   background-color: #ff0000;
   color: white;
 }
+
+.visibledevice {
+  display: none;
+}
+.visibledesktop {
+  display: display;
+}
+
+@media (max-width: 320px) {
+  .visibledevice {
+    display: block;
+  }
+  .visibledesktop {
+    display: none;
+  }
+}
