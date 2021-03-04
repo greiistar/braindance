@@ -38,11 +38,10 @@
         <br /><br />
         <nav class="topnav">
           <a class="active" href="index.html">HOME</a>
-          <a href="">site is work in progress...</a>
-          <!--  <a href="episodes.html">EPISODES</a> -->
-          <!--  <a href="">EVENTS</a> -->
-          <!--  <a href="https://braindancenews.bigcartel.com/">MERCH</a> -->
-          <!--  <a href="aboutme.html">ABOUT ME</a> -->
+          <a href="episodes.html">EPISODES</a>
+          <a href="events.html">EVENTS</a>
+          <a href="https://braindancenews.bigcartel.com/">MERCH</a>
+          <a href="aboutme.html">ABOUT ME</a>
         </nav>
 
         <p class="w3-center w3-xlarge">
@@ -84,6 +83,7 @@
 
           <!-- Update the Google forms URL in action-->
           <form
+            id="bdNewsEmailForm"
             action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfKDcnkhnprj0PZYIVA4EwcykYZ0sD1TU_AHCnkw0UpVi11Iw/formResponse"
             method="post"
             target="hidden_iframe"
@@ -112,21 +112,53 @@
 
         <div class="visibledesktop">
           <iframe
-            style="border: 10; width: 33%; height:390px;"
+            style="border: none; width: 33%; height:390px;"
             src="https://bandcamp.com/EmbeddedPlayer/album=3330859810/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
             seamless
             ><a href="https://xephem.bandcamp.com/album/compiler-level-3"
               >Compiler - Level 3 by Xephem Records</a
             ></iframe
           >
+          <iframe
+            style="border: none; width: 33%; height:390px; "
+            src="https://bandcamp.com/EmbeddedPlayer/album=1720150696/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
+            seamless
+            ><a href="https://fxbip.bandcamp.com/album/ame-polaire-2"
+              >Ame Polaire by Fxbip</a
+            ></iframe
+          >
+          <iframe
+            style="border: none; width: 33%; height:390px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1921572741/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
+            seamless
+            ><a href="https://4rdarmpit.bandcamp.com/album/infinite-speedbump"
+              >Infinite Speedbump by 4rd</a
+            ></iframe
+          >
         </div>
         <div class="visibledevice">
           <iframe
             style="border: 0; width: 100%; height: 120px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=3330859810/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+            src="https://bandcamp.com/EmbeddedPlayer/album=3330859810/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
             seamless
             ><a href="https://xephem.bandcamp.com/album/compiler-level-3"
               >Compiler - Level 3 by Xephem Records</a
+            ></iframe
+          >
+          <iframe
+            style="border: 0; width: 100%; height: 120px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1720150696/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+            seamless
+            ><a href="https://fxbip.bandcamp.com/album/ame-polaire-2"
+              >Ame Polaire by Fxbip</a
+            ></iframe
+          >
+          <iframe
+            style="border: 0; width: 100%; height: 120px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1921572741/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+            seamless
+            ><a href="https://4rdarmpit.bandcamp.com/album/infinite-speedbump"
+              >Infinite Speedbump by 4rd</a
             ></iframe
           >
         </div>
@@ -192,34 +224,6 @@
     </script>
     <!--GOOGLE FORM SCRIPT-->
     <script type="text/javascript">
-      function validateName() {
-        var name = document.getElementById("name").value;
-        if (name.length == 0) {
-          alert("Name can't be blank");
-          return false;
-        }
-        if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-          alert("Please enter your correct name"); //Validation Message
-          return false;
-        }
-        return true;
-      }
-
-      function validatePhone() {
-        var phone = document.getElementById("phone").value;
-        if (phone.length == 0) {
-          alert("Phone number can't be blank"); //Validation Message
-          return false;
-        }
-
-        if (!phone.match(/^[0]?[789]\d{9}$/)) {
-          alert("Please enter a correct phone number"); //Validation Message
-          return false;
-        }
-
-        return true;
-      }
-
       function validateEmail() {
         var email = document.getElementById("email").value;
         if (email.length == 0) {
@@ -236,7 +240,7 @@
       }
 
       function validateForm() {
-        if (!validateName() || !validatePhone() || !validateEmail()) {
+        if (!validateEmail()) {
           alert("Form not submitted"); //Validation Message
           return false;
         } else {

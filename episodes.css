@@ -37,6 +37,15 @@
   border-color: #0000ff;
   color: white;
 }
+.panel-body {
+  background-color: black;
+}
+.panel-title {
+  background-color: #111111;
+
+  color: white;
+}
+
 #demo {
   border-radius: 1px;
   border-color: white;
