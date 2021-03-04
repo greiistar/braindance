@@ -49,7 +49,7 @@ body {
 
 @media (max-width: 400px) {
   .visibledevice {
-    display: block;
+    display: display;
   }
   .visibledesktop {
     display: none;
