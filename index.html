@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href="images/icon.png" type="image/png" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />-->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato"
@@ -22,34 +22,44 @@
 
   <body>
     <!-- Page content -->
-    <div class="bgimg w3-container w3-black w3-mobile">
+    <div class="bgimg w3-black w3-mobile">
       <!-- The Rave Section -->
       <div
-        class="w3-container w3-content w3-center w3-padding-64 w3-black"
-        style="max-width:800px;"
-        id="brainrave"
+        class="w3-content "
+        style="max-width:800px;
+        text-align: center !important;
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+        padding: 0.01em 16px;
+        color:#fff!important;background-color:#000!important"
       >
-        <!--MAIN LOGO-->
-        <img
-          src="images/braindance_news_logo_white.png"
-          class="w3-center w3-mobile"
-          style="max-width:100%;height:auto;"
-        />
-        <br /><br />
-        <nav class="topnav">
-          <a class="active" href="index.html">HOME</a>
-          <a href="">site is work in progres...</a>
-          <!--  <a href="episodes.html">EPISODES</a>
-          <a href="events.html">EVENTS</a>
-          <a href="https://braindancenews.bigcartel.com/">MERCH</a>
-          <a href="aboutme.html">ABOUT ME</a> -->
-        </nav>
-
-        <p class="w3-center w3-xlarge">
-          Braindance News is a collection of projects aimed at unearthing and
-          promoting new experimental electronic music.
-        </p>
-        <!--  <form
+        <div>
+          <!--THE TOP-->
+          <!--MAIN LOGO-->
+          <img
+            src="images/braindance_news_logo_white.png"
+            style="max-width:100%;height:auto;
+            display: block;
+            width: 100% !important;
+            text-align: center;"
+          />
+          <br /><br />
+          <nav class="topnav">
+            <a class="active" href="index.html">HOME</a>
+            <!-- <a href="">site is work in progres...</a>-->
+            <!--<a href="episodes.html">EPISODES</a>-->
+            <a href="events.html">EVENTS</a>
+            <!--<a href="https://braindancenews.bigcartel.com/">MERCH</a>-->
+            <a href="aboutme.html">ABOUT ME</a>
+          </nav>
+        </div>
+        <div>
+          <!--body-->
+          <p class="w3-center w3-xlarge">
+            Braindance News is a collection of projects aimed at unearthing and
+            promoting new experimental electronic music.
+          </p>
+          <!--  <form
           action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfKDcnkhnprj0PZYIVA4EwcykYZ0sD1TU_AHCnkw0UpVi11Iw/formResponse"
         >
           <label for="fname"><i>Subscribe to Braindance News</i></label
@@ -66,122 +76,125 @@
           <input type="submit" id="lname" name="lname" />
         </form>
         -->
-        <!--lets try this...-->
+          <!--lets try this...-->
 
-        <!-- Start Contact Section -->
-        <div id="contact">
-          <script type="text/javascript">
-            var submitted = false;
-          </script>
+          <!-- Start Contact Section -->
+          <div id="contact">
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
 
-          <!--Update the URL for thank you page on form submit -->
-          <iframe
-            name="hidden_iframe"
-            id="hidden_iframe"
-            style="display:none;"
-            onload="if(submitted) {window.location='http://braindance.news/';}"
-          ></iframe>
+            <!--Update the URL for thank you page on form submit -->
+            <iframe
+              name="hidden_iframe"
+              id="hidden_iframe"
+              style="display:none;"
+              onload="if(submitted) {window.location='http://braindance.news/';}"
+            ></iframe>
 
-          <!-- Update the Google forms URL in action-->
-          <form
-            id="bdNewsEmailForm"
-            action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfKDcnkhnprj0PZYIVA4EwcykYZ0sD1TU_AHCnkw0UpVi11Iw/formResponse"
-            method="post"
-            target="hidden_iframe"
-            onsubmit="return validateForm(); "
-          >
-            <label>Subscribe</label><br />
-            <input
-              type="text"
-              placeholder="Enter Your Email"
-              id="email"
-              required
-              name="entry.1653156645"
-            />
+            <!-- Update the Google forms URL in action-->
+            <form
+              id="bdNewsEmailForm"
+              action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfKDcnkhnprj0PZYIVA4EwcykYZ0sD1TU_AHCnkw0UpVi11Iw/formResponse"
+              method="post"
+              target="hidden_iframe"
+              onsubmit="return validateForm(); "
+            >
+              <label>Subscribe</label><br />
+              <input
+                type="text"
+                placeholder="Enter Your Email"
+                id="email"
+                required
+                name="entry.1653156645"
+              />
 
-            <button type="submit">
-              SEND
-            </button>
-          </form>
+              <button type="submit">
+                SEND
+              </button>
+            </form>
+          </div>
+          <br />
+          <p class="w3-center w3-xlarge">
+            podcast, mix series, events, and music promotion :)
+          </p>
+          <hr class="w3-center w3-opacity dots" />
+          <p>
+            <i>Want to hear some new music? Here's some recent favorites:</i>
+          </p>
+
+          <div class="visibledesktop">
+            <iframe
+              style="border: none; width: 33%; height:400px;"
+              src="https://bandcamp.com/EmbeddedPlayer/album=3330859810/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
+              seamless
+              ><a href="https://xephem.bandcamp.com/album/compiler-level-3"
+                >Compiler - Level 3 by Xephem Records</a
+              ></iframe
+            >
+            <iframe
+              style="border: none; width: 33%; height:400px; "
+              src="https://bandcamp.com/EmbeddedPlayer/album=1720150696/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
+              seamless
+              ><a href="https://fxbip.bandcamp.com/album/ame-polaire-2"
+                >Ame Polaire by Fxbip</a
+              ></iframe
+            >
+            <iframe
+              style="border: none; width: 33%; height:400px;"
+              src="https://bandcamp.com/EmbeddedPlayer/album=1921572741/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
+              seamless
+              ><a href="https://4rdarmpit.bandcamp.com/album/infinite-speedbump"
+                >Infinite Speedbump by 4rd</a
+              ></iframe
+            >
+          </div>
+          <div class="visibledevice">
+            <iframe
+              style="border: 0; width: 100%; height: 120px;"
+              src="https://bandcamp.com/EmbeddedPlayer/album=3330859810/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+              seamless
+              ><a href="https://xephem.bandcamp.com/album/compiler-level-3"
+                >Compiler - Level 3 by Xephem Records</a
+              ></iframe
+            >
+            <iframe
+              style="border: 0; width: 100%; height: 120px;"
+              src="https://bandcamp.com/EmbeddedPlayer/album=1720150696/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+              seamless
+              ><a href="https://fxbip.bandcamp.com/album/ame-polaire-2"
+                >Ame Polaire by Fxbip</a
+              ></iframe
+            >
+            <iframe
+              style="border: 0; width: 100%; height: 120px;"
+              src="https://bandcamp.com/EmbeddedPlayer/album=1921572741/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+              seamless
+              ><a href="https://4rdarmpit.bandcamp.com/album/infinite-speedbump"
+                >Infinite Speedbump by 4rd</a
+              ></iframe
+            >
+          </div>
+
+          <h2 class="w3-center">
+            <a href="http://www.braindance.news"></a>
+          </h2>
+          <br />
+
+          <p class="w3-opacity w3-wide allcaps"><i>Support what you love</i></p>
+
+          <hr class="w3-center w3-opacity dots" />
+          <h3>
+            <i><a href="aboutme.html">Project run by Greystar</a></i> &nbsp;
+            <a href="https://greystarmusic.bandcamp.com/" target="_blank"
+              ><i class="fa fa-bandcamp w3-hover-opacity"></i
+            ></a>
+          </h3>
+          <p>
+            Follow the Facbook, Instagram, and Twitter for regular highlights of
+            new music.
+          </p>
         </div>
-        <br />
-        <p class="w3-center w3-xlarge">
-          podcast, mix series, events, and music promotion :)
-        </p>
-        <hr class="w3-center w3-opacity dots" />
-        <p><i>Want to hear some new music? Here's some recent favorites:</i></p>
-
-        <div class="visibledesktop">
-          <iframe
-            style="border: none; width: 33%; height:390px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=3330859810/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
-            seamless
-            ><a href="https://xephem.bandcamp.com/album/compiler-level-3"
-              >Compiler - Level 3 by Xephem Records</a
-            ></iframe
-          >
-          <iframe
-            style="border: none; width: 33%; height:390px; "
-            src="https://bandcamp.com/EmbeddedPlayer/album=1720150696/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
-            seamless
-            ><a href="https://fxbip.bandcamp.com/album/ame-polaire-2"
-              >Ame Polaire by Fxbip</a
-            ></iframe
-          >
-          <iframe
-            style="border: none; width: 33%; height:390px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1921572741/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/transparent=true/"
-            seamless
-            ><a href="https://4rdarmpit.bandcamp.com/album/infinite-speedbump"
-              >Infinite Speedbump by 4rd</a
-            ></iframe
-          >
-        </div>
-        <div class="visibledevice">
-          <iframe
-            style="border: 0; width: 100%; height: 120px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=3330859810/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-            ><a href="https://xephem.bandcamp.com/album/compiler-level-3"
-              >Compiler - Level 3 by Xephem Records</a
-            ></iframe
-          >
-          <iframe
-            style="border: 0; width: 100%; height: 120px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1720150696/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-            ><a href="https://fxbip.bandcamp.com/album/ame-polaire-2"
-              >Ame Polaire by Fxbip</a
-            ></iframe
-          >
-          <iframe
-            style="border: 0; width: 100%; height: 120px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1921572741/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-            ><a href="https://4rdarmpit.bandcamp.com/album/infinite-speedbump"
-              >Infinite Speedbump by 4rd</a
-            ></iframe
-          >
-        </div>
-
-        <h2 class="w3-center">
-          <a href="http://www.braindance.news"></a>
-        </h2>
-        <br />
-
-        <p class="w3-opacity w3-wide allcaps"><i>Support what you love</i></p>
-
-        <hr class="w3-center w3-opacity dots" />
-        <h3>
-          <i><a href="aboutme.html">Project run by Greystar</a></i> &nbsp;
-          <a href="https://greystarmusic.bandcamp.com/" target="_blank"
-            ><i class="fa fa-bandcamp w3-hover-opacity"></i
-          ></a>
-        </h3>
-        <p>
-          Follow the Facbook, Instagram, and Twitter for regular highlights of
-          new music.
-        </p>
       </div>
       <footer class="w3-container w3-padding-32 w3-center w3-jumbo">
         <a href="https://www.facebook.com/braindancenews" target="_blank"
