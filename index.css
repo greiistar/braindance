@@ -1,25 +1,13 @@
 body {
   font-family: "Lato", sans-serif;
-  background-image: url("images/wideGrid2_vertSm.png");
 }
-
-.bgimg {
-  background-image: url("images/wideGrid2_vertSm.png");
-  background-repeat: repeat;
-  height: 100%;
-}
-
-.dots {
-  border-top: 1px dotted;
-}
-/*NAV BAR*/
 .topnav {
+  font-size: 1.1em;
   overflow: hidden;
   background-color: #2e2e2e;
 }
 
 .topnav a {
-  font-size: 1em;
   color: #c5c5c5;
   text-align: center;
   padding: 0.5vh 1vw;
@@ -34,6 +22,16 @@ body {
 .topnav a.active {
   background-color: #ff0000;
   color: white;
+}
+
+/*
+  background-image: url("images/newgrid_square.png");
+  background-repeat: repeat;
+  background-position: center;
+}
+*/
+.main {
+  background: url("images/newgrid_square.png") repeat, #000000;
 }
 
 .deskvers {

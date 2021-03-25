@@ -17,27 +17,32 @@
     <link rel="stylesheet" href="events.css" />
   </head>
   <body class="main">
-    <main class="bgimg w3-container w3-black w3-mobile main">
+    <main class="w3-container w3-mobile">
       <!-- The Rave Section -->
       <div
         class="w3-container w3-content w3-center w3-padding-64 w3-black"
         style="max-width:800px;"
         id="brainrave"
       >
-        <!--MAIN LOGO-->
-        <img
-          src="images/braindance_news_logo_white.png"
-          class="w3-center w3-mobile"
-          style="max-width:100%;height:auto;"
-        />
-        <br /><br />
-        <nav class="topnav">
-          <a href="index.html">HOME</a>
-          <a href="episodes.html">EPISODES</a>
-          <a class="active" href="">EVENTS</a>
-          <!--<a href="https://braindancenews.bigcartel.com/">MERCH</a>-->
-          <a href="aboutme.html">ABOUT ME</a>
-        </nav>
+        <div>
+          <!--THE TOP-->
+          <!--MAIN LOGO-->
+          <img
+            src="images/braindance_news_logo_white.png"
+            style="max-width:100%;height:auto;
+            display: block;
+            width: 100% !important;
+            text-align: center;"
+          />
+          <br /><br />
+          <nav class="topnav">
+            <a href="index.html">HOME</a>
+            <a href="episodes.html">EPISODES</a>
+            <a class="active" href="events.html">EVENTS</a>
+            <!--<a href="https://braindancenews.bigcartel.com/">MERCH</a>-->
+            <a href="aboutme.html">ABOUT&nbsp;&nbsp;ME</a>
+          </nav>
+        </div>
         <h2 style="color:#555555;">
           <p><i>UPCOMING EVENTS...</i></p>
         </h2>
@@ -70,8 +75,49 @@
             /></a>
           </div>
         </span>
-        <!--end of center div-->
       </div>
+      <footer
+        class="w3-container w3-padding-32 w3-center"
+        style="font-size: 3em;color:white"
+      >
+        <a href="https://www.facebook.com/braindancenews" target="_blank"
+          ><i class="fa fa-facebook-official w3-hover-opacity"></i
+        ></a>
+        <a href="https://www.instagram.com/braindancenews/" target="_blank"
+          ><i class="fa fa-instagram w3-hover-opacity"></i
+        ></a>
+        <a href="https://twitter.com/braindancenews" target="_blank"
+          ><i class="fa fa-twitter w3-hover-opacity"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCsAwdOhDa506xeccCccvJMw"
+          target="_blank"
+          ><i class="fa fa-youtube w3-hover-opacity"></i
+        ></a>
+        <a href="https://www.twitch.tv/braindancenews" target="_blank"
+          ><i class="fa fa-twitch w3-hover-opacity"></i
+        ></a>
+        <a
+          href="https://soundcloud.com/greystarmusic/sets/braindance-news-season-2"
+          target="_blank"
+          ><i class="fa fa-soundcloud w3-hover-opacity"></i
+        ></a>
+      </footer>
+      <!--end of center div-->
     </main>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NCDR11FWMQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NCDR11FWMQ");
+    </script>
   </body>
 </html>

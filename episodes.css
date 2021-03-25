@@ -1,10 +1,13 @@
+body {
+  font-family: "Lato", sans-serif;
+}
 .topnav {
+  font-size: 1.1em;
   overflow: hidden;
   background-color: #2e2e2e;
 }
 
 .topnav a {
-  font-size: 1em;
   color: #c5c5c5;
   text-align: center;
   padding: 0.5vh 1vw;
@@ -51,7 +54,7 @@
   border-radius: 1px;
   border-color: white;
 }
-/*phone vs comp*/
+
 .visibledevice {
   display: none;
 }
