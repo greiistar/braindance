@@ -23,7 +23,16 @@ body {
   background-color: #ff0000;
   color: white;
 }
-
+.br2column {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.br2row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*
   background-image: url("images/newgrid_square.png");
   background-repeat: repeat;
